@@ -58,10 +58,12 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <Button variant="default" size="sm" className="font-mono">
-            <span className="text-primary-foreground mr-1">$</span> cat
-            resume.pdf
-          </Button>
+          <a href="../../public/Eisa_Chaudhary_Resume.pdf" download>
+            <Button variant="default" size="sm" className="font-mono">
+              <span className="text-primary-foreground mr-1">$</span> cat resume.pdf
+            </Button>
+          </a>
+
         </nav>
 
         {/* Mobile Menu Button */}
@@ -91,9 +93,12 @@ export default function Header() {
               </a>
             ))}
             <div className="px-4 pt-2">
-              <Button variant="default" size="sm" className="w-full">
-                Resume
-              </Button>
+              <a href="../../public/Eisa_Chaudhary_Resume.pdf" download>
+                <Button variant="default" size="sm" className="font-mono">
+                  <span className="text-primary-foreground mr-1">$</span> cat resume.pdf
+                </Button>
+              </a>
+
             </div>
           </nav>
         </div>
