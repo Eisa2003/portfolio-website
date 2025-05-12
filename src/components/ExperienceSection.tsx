@@ -17,50 +17,45 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: "exp1",
-    company: "Tech Innovations Inc.",
-    position: "Senior Frontend Developer",
-    period: "Jan 2023 - Present",
+    company: "Communities in School - South Carolina",
+    position: "Full Stack Web Developer Intern",
+    period: "May 2024 – Aug 2024",
     description: [
-      "Led the development of a new customer dashboard using React and TypeScript, improving user engagement by 40%.",
-      "Implemented CI/CD pipelines that reduced deployment time by 60%.",
-      "Mentored junior developers and conducted code reviews to maintain high code quality standards.",
+      "Built a fully functional website using the MERN stack for dynamic content management.",
+      "Designed and deployed a secure RESTful API and deployed the app using AWS Console (EC2, S3, Route53).",
+      "Gained hands-on experience with manual server configuration and deployment processes."
     ],
-    technologies: [
-      "React",
-      "TypeScript",
-      "Tailwind CSS",
-      "Jest",
-      "GitHub Actions",
-    ],
-    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=tech-innovations",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "AWS", "REST APIs"],
+    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=cis-intern",
   },
   {
     id: "exp2",
-    company: "WebSolutions Co.",
-    position: "Full Stack Developer",
-    period: "Mar 2020 - Dec 2022",
+    company: "USCB IT Help Desk",
+    position: "Student Technician",
+    period: "Feb 2024 – Present",
     description: [
-      "Developed and maintained multiple client websites and web applications using modern JavaScript frameworks.",
-      "Designed and implemented RESTful APIs using Node.js and Express.",
-      "Collaborated with UX designers to implement responsive designs and improve user experience.",
+      "Resolved technical support tickets for faculty and staff across university departments.",
+      "Configured phone systems and managed technical onboarding for new users.",
+      "Contributed to network troubleshooting and improved IT workflow documentation."
     ],
-    technologies: ["JavaScript", "Node.js", "Express", "MongoDB", "Vue.js"],
-    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=websolutions",
+    technologies: ["Windows", "VoIP Systems", "Help Desk", "IT Support"],
+    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=uscb-helpdesk",
   },
   {
     id: "exp3",
-    company: "Digital Creatives",
-    position: "Junior Web Developer",
-    period: "Jun 2018 - Feb 2020",
+    company: "Sahu Technologies",
+    position: "Web Design & Testing Intern",
+    period: "Aug 2021 – Sep 2021",
     description: [
-      "Built and maintained client websites using WordPress and custom PHP solutions.",
-      "Implemented responsive designs and ensured cross-browser compatibility.",
-      "Assisted in migrating legacy systems to modern web technologies.",
+      "Planned and completed a client-facing website within 6 weeks using HTML & CSS.",
+      "Converted legacy documents to clean, standards-compliant HTML.",
+      "Delivered high-quality output with timely client communication."
     ],
-    technologies: ["HTML", "CSS", "JavaScript", "PHP", "WordPress"],
-    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=digital-creatives",
+    technologies: ["HTML", "CSS", "Client Coordination"],
+    logo: "https://api.dicebear.com/7.x/identicon/svg?seed=sahu-tech",
   },
 ];
+
 
 export default function ExperienceSection() {
   const [activeExperience, setActiveExperience] = useState<string>(

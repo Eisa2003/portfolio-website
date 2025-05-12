@@ -31,25 +31,25 @@ export default function AboutSection() {
       icon: <Code className="h-6 w-6 text-primary" />,
       title: "Web Development",
       description:
-        "Building responsive and performant web applications using modern frameworks and technologies.",
+        "Full-stack engineering using React, Spring Boot, and REST APIs with secure, scalable architecture.",
     },
     {
       icon: <Laptop className="h-6 w-6 text-primary" />,
       title: "UI/UX Design",
       description:
-        "Creating intuitive and visually appealing user interfaces with a focus on user experience.",
+        "Designing seamless user interfaces with intuitive flows and a strong focus on accessibility.",
     },
     {
       icon: <Lightbulb className="h-6 w-6 text-primary" />,
       title: "Problem Solving",
       description:
-        "Analyzing complex problems and developing efficient solutions with clean, maintainable code.",
+        "Combining logic and creativity to tackle complex challenges, especially in machine learning and HPC.",
     },
     {
       icon: <Users className="h-6 w-6 text-primary" />,
       title: "Collaboration",
       description:
-        "Working effectively in teams, communicating ideas clearly, and adapting to changing requirements.",
+        "Working across teams, sharing research, and contributing to academic and community-driven projects.",
     },
   ];
 
@@ -71,10 +71,11 @@ export default function AboutSection() {
           <div className="terminal p-4 text-left max-w-2xl mx-auto">
             <p className="text-lg text-foreground font-mono">
               <span className="text-primary">/**</span><br/>
-              <span className="pl-4">I'm a passionate developer with 5+ years of experience in creating</span><br/>
-              <span className="pl-4">web applications. My journey in tech started with a curiosity about</span><br/>
-              <span className="pl-4">how things work on the web, which evolved into a career building</span><br/>
-              <span className="pl-4">digital solutions that make a difference.</span><br/>
+              <span className="pl-4">I'm a computational science major with a minor in Math,</span><br/>
+              <span className="pl-4">Having a strong foundation in web development,</span><br/>
+              <span className="pl-4">Machine learning, and high-performance computing.</span><br/>
+              <span className="pl-4">My work blends engineering and research—building apps,</span><br/>
+              <span className="pl-4">training models, and solving real-world problems with data.</span><br/>
               <span className="text-primary">*/</span>
             </p>
           </div>
@@ -115,19 +116,18 @@ export default function AboutSection() {
               <div className="font-mono text-sm">
                 <p className="text-muted-foreground">
                   <span className="text-primary">/**</span><br/>
-                  <span className="pl-4">With a background in computer science and a passion for</span><br/>
-                  <span className="pl-4">continuous learning, I've worked on projects ranging from small</span><br/>
-                  <span className="pl-4">business websites to complex enterprise applications. I believe</span><br/>
-                  <span className="pl-4">in writing clean, maintainable code and creating intuitive user</span><br/>
-                  <span className="pl-4">experiences.</span><br/>
+                  <span className="pl-4">As a student researcher and developer, I've worked on academic</span><br/>
+                  <span className="pl-4">projects like habit tracking apps, ML-based prediction tools, and</span><br/>
+                  <span className="pl-4">parallelized simulations. My focus is on writing clean code,</span><br/>
+                  <span className="pl-4">deploying production-ready tools, and learning continuously.</span><br/>
                   <span className="text-primary">*/</span>
                 </p>
                 <p className="text-muted-foreground mt-4">
                   <span className="text-primary">// When I'm not coding</span><br/>
-                  <span className="text-syntax-keyword">function</span> <span className="text-syntax-function">freeTime</span>() {"{"}}<br/>
-                  <span className="pl-4">exploring new technologies</span><br/>
-                  <span className="pl-4">contributing to open-source</span><br/>
-                  <span className="pl-4">enjoying outdoor activities</span><br/>
+                  <span className="text-syntax-keyword">function</span> <span className="text-syntax-function">freeTime</span>() {"{"}<br/>
+                  <span className="pl-4">tinkering with side projects</span><br/>
+                  <span className="pl-4">designing learning visuals in Manim</span><br/>
+                  <span className="pl-4">taking long evening walks</span><br/>
                   {"}"};
                 </p>
               </div>

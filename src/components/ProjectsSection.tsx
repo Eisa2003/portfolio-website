@@ -28,82 +28,73 @@ interface Project {
 const projects: Project[] = [
   {
     id: "project1",
-    title: "E-commerce Platform",
+    title: "Habitly - Habit Tracking App",
     description:
-      "A modern e-commerce platform with advanced filtering and payment integration.",
+      "A full-stack habit tracking app that uses machine learning to predict user behavior and visualizes progress.",
     longDescription:
-      "A comprehensive e-commerce solution built with React and Node.js. Features include product filtering, user authentication, shopping cart functionality, payment processing with Stripe, and an admin dashboard for inventory management. The application uses MongoDB for data storage and Redux for state management.",
+      "Developed a comprehensive habit tracking system using React and Spring Boot with JWT authentication. The app supports user registration, habit creation, weekly tracking, and progress visualization using Recharts. Integrated ML models to provide habit completion predictions based on historical data.",
     image:
       "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
-    technologies: ["React", "Node.js", "MongoDB", "Express", "Redux", "Stripe"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    technologies: ["React", "Spring Boot", "JWT", "Recharts", "Machine Learning"],
+    liveUrl: "https://habitly-team6.netlify.app/",
+    githubUrl: "https://github.com/eisachaudhary/habitly-tracker",
     featured: true,
   },
   {
     id: "project2",
-    title: "Task Management App",
+    title: "Hampton County Resource Center",
     description:
-      "A collaborative task management application with real-time updates.",
+      "A dynamic community resource website for local events and public information.",
     longDescription:
-      "A productivity tool designed for teams to manage tasks efficiently. Built with Vue.js and Firebase, it offers real-time updates, task assignment, due date tracking, and progress monitoring. The app includes notification systems and integrates with popular calendar applications.",
+      "Built and deployed a dynamic website for Hampton County communities using the MERN stack. The site features a RESTful API for managing county events and public resources. Deployed on AWS Console with full stack authentication and manual EC2/S3 setup.",
     image:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
-    technologies: ["Vue.js", "Firebase", "Vuex", "Tailwind CSS"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    technologies: ["MongoDB", "Express", "React", "Node.js", "AWS"],
+    liveUrl: "https://hamptoncountyresourcecenter.org/",
+    githubUrl: "https://github.com/eisachaudhary/hampton-resource-center",
     featured: true,
   },
   {
     id: "project3",
-    title: "Fitness Tracker",
+    title: "Manananggal – Java Game Design",
     description:
-      "A mobile-first web application for tracking workouts and nutrition.",
+      "An algorithmic arcade game inspired by Philippine folklore, created in Greenfoot.",
     longDescription:
-      "A comprehensive fitness solution that helps users track their workouts, nutrition, and progress over time. Built with React Native for cross-platform compatibility, it features custom workout creation, nutrition logging, progress charts, and social sharing capabilities.",
+      "Award-winning game project built in Java using Greenfoot. Focused on algorithmic design, this game brings Philippine mythology to life through interactive elements and challenges. Presented as part of Java Algorithmic Design coursework.",
     image:
       "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
-    technologies: ["React Native", "GraphQL", "Node.js", "MongoDB"],
-    githubUrl: "https://github.com",
+    technologies: ["Java", "Greenfoot", "OOP"],
+    liveUrl: "https://www.greenfoot.org/scenarios/30358",
+    githubUrl: "https://github.com/eisachaudhary/manananggal-greenfoot",
   },
   {
     id: "project4",
-    title: "Weather Dashboard",
+    title: "Tutoring Website – Capstone Project",
     description:
-      "An interactive weather dashboard with location-based forecasts.",
+      "An educational portal to help students learn coding in various programming languages.",
     longDescription:
-      "A weather application that provides detailed forecasts based on user location. It integrates with multiple weather APIs to ensure accurate data and features interactive maps, hourly and weekly forecasts, severe weather alerts, and customizable units of measurement.",
+      "Designed as a capstone project, this platform helps students learn to code with guided tutorials, quizzes, and language-specific pathways. Built using HTML, CSS, JS, and Node with PHP/MySQL backend integration.",
     image:
       "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
-    technologies: ["JavaScript", "HTML/CSS", "Weather API", "Leaflet.js"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
+    technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MySQL", "PHP"],
+    liveUrl: "#", // Replace with actual deployment link if exists
+    githubUrl: "https://github.com/eisachaudhary/online-tutoring-platform",
   },
   {
     id: "project5",
-    title: "Portfolio Website",
-    description: "A personal portfolio website showcasing projects and skills.",
+    title: "Personal Portfolio",
+    description:
+      "A portfolio website showcasing projects, experience, and skills with a terminal-style interface.",
     longDescription:
-      "A modern, responsive portfolio website built with React and Tailwind CSS. Features include smooth scrolling, animated sections, dark mode support, contact form integration, and optimized performance metrics.",
+      "Responsive portfolio site built with React, Tailwind CSS, and Framer Motion. Highlights key projects, includes contact functionality, resume viewing, and a custom terminal-like hero section with animated typing effects.",
     image:
       "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://example.com",
-    githubUrl: "https://github.com",
-  },
-  {
-    id: "project6",
-    title: "Recipe Finder",
-    description:
-      "A web application for discovering and saving recipes based on available ingredients.",
-    longDescription:
-      "A culinary companion app that helps users find recipes based on ingredients they already have. Built with Angular and Firebase, it features ingredient-based search, recipe saving, nutritional information, and user reviews. The app also includes a meal planning feature and shopping list generation.",
-    image:
-      "https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80",
-    technologies: ["Angular", "Firebase", "RxJS", "Recipe API"],
-    liveUrl: "https://example.com",
+    liveUrl: "https://eisachaudhary.dev/", // Replace with actual URL if live
+    githubUrl: "https://github.com/eisachaudhary/portfolio-site",
   },
 ];
+
 
 export default function ProjectsSection() {
   const [filter, setFilter] = useState<"all" | "featured">("all");

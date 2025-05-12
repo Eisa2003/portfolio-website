@@ -21,7 +21,7 @@ export default function Footer() {
               className="text-2xl font-bold text-primary font-mono flex items-center"
             >
               <span className="text-primary mr-1">~/</span>
-              <span className="text-primary">Portfolio</span>
+              <span className="text-primary">Eisa-Portfolio</span>
               <span className="text-primary/70">.dev</span>
             </a>
             <p className="text-muted-foreground mt-2 font-mono">
@@ -40,8 +40,8 @@ export default function Footer() {
               <ArrowUp className="h-4 w-4 text-primary" />
             </Button>
             <p className="text-muted-foreground text-sm font-mono">
-              <span className="text-primary">/* </span>© {currentYear} John
-              Doe. All rights reserved.<span className="text-primary"> */</span>
+              <span className="text-primary">/* </span>© {currentYear} Eisa
+              Chaudhary. All rights reserved.<span className="text-primary"> */</span>
             </p>
           </div>
         </div>

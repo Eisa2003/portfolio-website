@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
+import img from "../images/profile.jpg"
 
 import { useEffect, useState, useRef } from "react";
 
@@ -8,7 +9,15 @@ export default function HeroSection() {
   const [text, setText] = useState("");
   const [showCursor, setShowCursor] = useState(true);
   const fullText =
-    "const developer = {\n  name: 'John Doe',\n  role: 'Full Stack Developer',\n  skills: ['React', 'TypeScript', 'Node.js', 'Python'],\n  passion: 'Building exceptional digital experiences',\n  focus: 'Creating intuitive, high-performance applications'\n};\n\nconsole.log('Hello World! Welcome to my portfolio.');";
+    "const developer = {\n" +
+    "  name: 'Eisa Chaudhary',\n" +
+    "  role: 'Full Stack Developer | ML Researcher',\n" +
+    "  skills: ['React', 'Spring Boot', 'Python', \n          'Java', 'TypeScript', 'SQL', 'MPI/OpenMP'],\n" +
+    "  passion: 'Building intelligent, user-focused web apps',\n" +
+    "  focus: 'Blending software engineering with machine learning for impactful solutions'\n" +
+    "};\n\n" +
+    "console.log('Hello World! Welcome to my portfolio.');";
+
   const typingSpeed = 30;
   const cursorRef = useRef<NodeJS.Timeout | null>(null);
   const typingRef = useRef<NodeJS.Timeout | null>(null);
@@ -33,25 +42,34 @@ export default function HeroSection() {
     };
   }, []);
 
-  const formatCode = (code: string) => {
-    return code.split("\n").map((line, index) => {
-      // Apply syntax highlighting
-      const highlightedLine = line
+  const formatCode = (code: string, showCursor: boolean) => {
+    const lines = code.split("\n");
+    const lastLineIndex = lines.length - 1;
+
+    return lines.map((line, index) => {
+      let highlightedLine = line
         .replace(
           /(const|let|var|function|return|if|else)/g,
-          '<span class="syntax-keyword">$1</span>',
+          '<span class="syntax-keyword">$1</span>'
         )
         .replace(/('.*?'|".*?")/g, '<span class="syntax-string">$1</span>')
         .replace(/(\.\w+\()/g, '<span class="syntax-function">$1</span>')
         .replace(/(\w+):/g, '<span class="syntax-variable">$1</span>')
         .replace(/(console\.log)/g, '<span class="syntax-function">$1</span>');
 
+      if (showCursor && index === lastLineIndex && text.length === fullText.length) {
+        highlightedLine += '<span class="animate-pulse text-primary">▌</span>';
+      }
+
       return (
-        <div key={index} className="flex">
+        <div key={index} className="flex break-words">
           <span className="text-muted-foreground mr-4 select-none">
             {index + 1}
           </span>
-          <span dangerouslySetInnerHTML={{ __html: highlightedLine }} />
+          <span
+            className="break-words whitespace-pre-wrap"
+            dangerouslySetInnerHTML={{ __html: highlightedLine }}
+          />
         </div>
       );
     });
@@ -67,6 +85,7 @@ export default function HeroSection() {
             transition={{ duration: 0.5 }}
             className="space-y-6"
           >
+
             <div className="terminal">
               <div className="terminal-header">
                 <div className="terminal-dot terminal-red"></div>
@@ -78,15 +97,7 @@ export default function HeroSection() {
               </div>
               <div className="font-mono text-sm overflow-x-auto">
                 <div className="relative">
-                  {formatCode(text)}
-                  {showCursor && (
-                    <span
-                      className="text-primary animate-pulse absolute"
-                      style={{ right: "-10px", bottom: "0" }}
-                    >
-                      ▌
-                    </span>
-                  )}
+                  {formatCode(text, showCursor)}
                 </div>
               </div>
             </div>
@@ -109,7 +120,7 @@ export default function HeroSection() {
 
             <div className="flex items-center gap-4 pt-4">
               <a
-                href="https://github.com"
+                href="https://github.com/Eisa2003"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -117,7 +128,7 @@ export default function HeroSection() {
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/eisa-chaudhary-174164238"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -139,9 +150,8 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="relative aspect-square max-w-md mx-auto lg:ml-auto"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-primary/5 rounded-md"></div>
             <img
-              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=500&q=80"
+              src="https://lh3.googleusercontent.com/pw/AP1GczP_oFNCZgDg1P_fHgAdZLUxI8P9s4OZu69pF7swUbVAAnYOjIbXl85cKtopLKZIklb9sYVp8eejixWgpXA1r22sRxzehjH2IvMMY0EbrUhIjAs5_5Bg=w2400"
               alt="Profile"
               className="rounded-md object-cover w-full h-full p-4 border-2 border-primary/30"
             />

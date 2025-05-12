@@ -72,19 +72,19 @@ export default function ContactSection() {
     {
       icon: <Mail className="h-6 w-6 text-primary" />,
       title: "Email",
-      details: "contact@example.com",
-      link: "mailto:contact@example.com",
+      details: "eisarkc@gmail.com",
+      link: "mailto:eisarkc@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-primary" />,
       title: "Phone",
-      details: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      details: "+1 (843) 304-5481",
+      link: "tel:+18433045481",
     },
     {
       icon: <MapPin className="h-6 w-6 text-primary" />,
       title: "Location",
-      details: "San Francisco, CA",
+      details: "Okatie, SC",
     },
   ];
 
@@ -111,14 +111,15 @@ export default function ContactSection() {
           </p>
         </motion.div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 w-full">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="lg:col-span-1 space-y-6"
+            className="lg:col-span-3 w-full space-y-6"
           >
+
             {contactInfo.map((info, index) => (
               <Card key={index} className="border-none shadow-md bg-card">
                 <CardContent className="p-6 flex items-start space-x-4">
@@ -153,7 +154,7 @@ export default function ContactSection() {
                 <h3 className="font-semibold text-lg mb-4">Connect With Me</h3>
                 <div className="flex space-x-4">
                   <a
-                    href="https://github.com"
+                    href="https://github.com/Eisa2003"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-muted p-3 rounded-full hover:bg-primary/20 transition-colors"
@@ -172,7 +173,7 @@ export default function ContactSection() {
                     </svg>
                   </a>
                   <a
-                    href="https://linkedin.com"
+                    href="https://www.linkedin.com/in/eisa-chaudhary-174164238"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="bg-muted p-3 rounded-full hover:bg-primary/20 transition-colors"
@@ -213,6 +214,7 @@ export default function ContactSection() {
             viewport={{ once: true }}
             className="lg:col-span-2"
           >
+            {/*}
             <Card className="border-none shadow-md bg-card">
               <CardContent className="p-6">
                 <div className="terminal-header mb-4">
@@ -327,7 +329,7 @@ export default function ContactSection() {
                   </form>
                 </Form>
               </CardContent>
-            </Card>
+            </Card> */}
           </motion.div>
         </div>
       </div>

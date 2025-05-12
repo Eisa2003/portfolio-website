@@ -41,7 +41,7 @@ export default function Header() {
           className="text-2xl font-bold text-primary font-mono flex items-center"
         >
           <span className="text-primary mr-1">~/</span>
-          <span className="text-primary">Portfolio</span>
+          <span className="text-primary">Eisa-Portfolio</span>
           <span className="text-primary/70">.dev</span>
           <span className="animate-blink ml-1 text-primary">▌</span>
         </a>

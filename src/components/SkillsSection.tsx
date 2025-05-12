@@ -69,7 +69,7 @@ function SkillBar({ skill }: { skill: Skill }) {
           style={{ width: `${skill.level}%` }}
         >
           <div className="flex space-x-1">
-            {Array.from({ length: Math.floor(skill.level / 10) }).map(
+            {Array.from({ length: Math.floor(skill.level / 3.5) }).map(
               (_, i) => (
                 <span key={i} className="text-primary">
                   █
