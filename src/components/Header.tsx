@@ -58,7 +58,7 @@ export default function Header() {
               {item.label}
             </a>
           ))}
-          <a href="../../public/Eisa_Chaudhary_Resume.pdf" download>
+          <a href="/Eisa_Chaudhary_Resume.pdf" download>
             <Button variant="default" size="sm" className="font-mono">
               <span className="text-primary-foreground mr-1">$</span> cat resume.pdf
             </Button>
@@ -93,7 +93,7 @@ export default function Header() {
               </a>
             ))}
             <div className="px-4 pt-2">
-              <a href="../../public/Eisa_Chaudhary_Resume.pdf" download>
+              <a href="/Eisa_Chaudhary_Resume.pdf" download>
                 <Button variant="default" size="sm" className="font-mono">
                   <span className="text-primary-foreground mr-1">$</span> cat resume.pdf
                 </Button>
