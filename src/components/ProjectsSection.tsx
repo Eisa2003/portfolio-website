@@ -33,8 +33,7 @@ const projects: Project[] = [
       "A full-stack habit tracking app that uses machine learning to predict user behavior and visualizes progress.",
     longDescription:
       "Developed a comprehensive habit tracking system using React and Spring Boot with JWT authentication. The app supports user registration, habit creation, weekly tracking, and progress visualization using Recharts. Integrated ML models to provide habit completion predictions based on historical data.",
-    image:
-      "https://images.unsplash.com/photo-1557821552-17105176677c?w=800&q=80",
+    image: "/images/habitly-screenshot.png",
     technologies: ["React", "Spring Boot", "JWT", "Recharts", "Machine Learning"],
     liveUrl: "https://habitly-team6.netlify.app/",
     githubUrl: "https://github.com/eisachaudhary/habitly-tracker",
@@ -47,8 +46,7 @@ const projects: Project[] = [
       "A dynamic community resource website for local events and public information.",
     longDescription:
       "Built and deployed a dynamic website for Hampton County communities using the MERN stack. The site features a RESTful API for managing county events and public resources. Deployed on AWS Console with full stack authentication and manual EC2/S3 setup.",
-    image:
-      "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=800&q=80",
+    image: "/images/hampton-screenshot.png",
     technologies: ["MongoDB", "Express", "React", "Node.js", "AWS"],
     liveUrl: "https://hamptoncountyresourcecenter.org/",
     githubUrl: "https://github.com/eisachaudhary/hampton-resource-center",
@@ -61,23 +59,21 @@ const projects: Project[] = [
       "An algorithmic arcade game inspired by Philippine folklore, created in Greenfoot.",
     longDescription:
       "Award-winning game project built in Java using Greenfoot. Focused on algorithmic design, this game brings Philippine mythology to life through interactive elements and challenges. Presented as part of Java Algorithmic Design coursework.",
-    image:
-      "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=800&q=80",
+    image: "/images/manananggal-screenshot.png",
     technologies: ["Java", "Greenfoot", "OOP"],
     liveUrl: "https://www.greenfoot.org/scenarios/30358",
     githubUrl: "https://github.com/eisachaudhary/manananggal-greenfoot",
   },
   {
     id: "project4",
-    title: "Tutoring Website – Capstone Project",
+    title: "Tutoring Website – IT Diploma Capstone Project",
     description:
       "An educational portal to help students learn coding in various programming languages.",
     longDescription:
       "Designed as a capstone project, this platform helps students learn to code with guided tutorials, quizzes, and language-specific pathways. Built using HTML, CSS, JS, and Node with PHP/MySQL backend integration.",
-    image:
-      "https://images.unsplash.com/photo-1592210454359-9043f067919b?w=800&q=80",
+    image: "/images/tutoring-screenshot.png",
     technologies: ["HTML", "CSS", "JavaScript", "Node.js", "MySQL", "PHP"],
-    liveUrl: "#", // Replace with actual deployment link if exists
+    liveUrl: "#",
     githubUrl: "https://github.com/eisachaudhary/online-tutoring-platform",
   },
   {
@@ -87,13 +83,25 @@ const projects: Project[] = [
       "A portfolio website showcasing projects, experience, and skills with a terminal-style interface.",
     longDescription:
       "Responsive portfolio site built with React, Tailwind CSS, and Framer Motion. Highlights key projects, includes contact functionality, resume viewing, and a custom terminal-like hero section with animated typing effects.",
-    image:
-      "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&q=80",
+    image: "/images/portfolio-screenshot.png",
     technologies: ["React", "Tailwind CSS", "Framer Motion"],
-    liveUrl: "https://eisachaudhary.dev/", // Replace with actual URL if live
+    liveUrl: "https://eisachaudhary.dev/",
     githubUrl: "https://github.com/eisachaudhary/portfolio-site",
   },
+  {
+    id: "project6",
+    title: "Predicting Success in STATB201",
+    description:
+      "An ML research project to predict student performance in a college statistics course.",
+    longDescription:
+      "Conducted an independent research project under Dr. Fusi to predict success in STATB201 using past academic performance. Used Python and scikit-learn to train models like logistic regression, decision trees, and KNN. Built a Dash web app to visualize results and support academic advising.",
+    image: "/images/statb201-research-screenshot.png",
+    technologies: ["Python", "scikit-learn", "Pandas", "Dash", "Plotly"],
+    liveUrl: "#",
+    githubUrl: "https://github.com/eisachaudhary/statb201-ml-research",
+  }
 ];
+
 
 
 export default function ProjectsSection() {

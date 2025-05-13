@@ -17,7 +17,7 @@ interface Experience {
 const experiences: Experience[] = [
   {
     id: "exp1",
-    company: "Communities in School - South Carolina",
+    company: "CIS - South Carolina",
     position: "Full Stack Web Developer Intern",
     period: "May 2024 – Aug 2024",
     description: [
