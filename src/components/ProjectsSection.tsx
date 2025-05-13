@@ -95,7 +95,7 @@ const projects: Project[] = [
       "An ML research project to predict student performance in a college statistics course.",
     longDescription:
       "Conducted an independent research project under Dr. Fusi to predict success in STATB201 using past academic performance. Used Python and scikit-learn to train models like logistic regression, decision trees, and KNN. Built a Dash web app to visualize results and support academic advising.",
-    image: "/images/statb201-research-screenshot.png",
+    image: "/images/statb201-research-screenshot.jpg",
     technologies: ["Python", "scikit-learn", "Pandas", "Dash", "Plotly"],
     liveUrl: "#",
     githubUrl: "https://github.com/eisachaudhary/statb201-ml-research",
